@@ -6,7 +6,7 @@ server:
   ip: 127.0.0.1
   port: 8000
   http_port: 8003
-  websocket: wss://${RENDER_EXTERNAL_HOSTNAME}/xiaozhi/v1/
+  websocket: ${PUBLIC_WS_URL:-wss://${RENDER_EXTERNAL_HOSTNAME}/xiaozhi/v1/}
 selected_module:
   VAD: SileroVAD
   ASR: GroqASR
